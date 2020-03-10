@@ -20,6 +20,9 @@ public class RectangleTest {
     public void test() {
         assertEquals(exampleRec.getHeight(), 4);
         assertEquals(exampleRecWParam.getHeight(), 10);
+        assertEquals(exampleRectangleWithParam.contains(0,0), true);
+        assertEquals(exampleRectangleWithParam.contains(0,20), false);
+        assertEquals(exampleRectangleWithParam.contains(50,50), false);
     }
 
     @After

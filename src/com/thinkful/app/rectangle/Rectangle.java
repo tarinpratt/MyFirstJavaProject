@@ -24,6 +24,12 @@ public class Rectangle {
         this.width = 2;
     }
 
+    public boolean contains(int x, int y) {
+      boolean containsX = (this.x < x || this.x == x) && (x < this.x + this.width || x == this.x + this.width);
+      boolean containsY = (this.y < y || this.y == y) && (y < this.y + this.height || y == this.y + this.height);
+      return containsX && containsY;
+
+    }
     public int getX() {
         return x;
       }
